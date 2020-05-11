@@ -115,24 +115,24 @@ abstract class DocumentRetriever {
 
 
 	// TODO: this was all copied from Condition.ts, we need to figure out a better way to handle this --------------------------------------------------
-	and: () => Condition;
-	or: () => Condition;
-	not: () => Condition;
-	parenthesis: (value: Condition | ConditionFunction) => Condition;
-	group: (value: Condition | ConditionFunction) => Condition;
-	where: (key: string) => Condition;
-	filter: (key: string) => Condition;
-	attribute: (key: string) => Condition;
-	eq: (value: any) => Condition;
-	lt: (value: number) => Condition;
-	le: (value: number) => Condition;
-	gt: (value: number) => Condition;
-	ge: (value: number) => Condition;
-	beginsWith: (value: any) => Condition;
-	contains: (value: any) => Condition;
-	exists: (value: any) => Condition;
-	in: (value: any) => Condition;
-	between: (...values: any[]) => Condition;
+	and: () => DocumentRetriever;
+	or: () => DocumentRetriever;
+	not: () => DocumentRetriever;
+	parenthesis: (value: Condition | ConditionFunction) => DocumentRetriever;
+	group: (value: Condition | ConditionFunction) => DocumentRetriever;
+	where: (key: string) => DocumentRetriever;
+	filter: (key: string) => DocumentRetriever;
+	attribute: (key: string) => DocumentRetriever;
+	eq: (value: any) => DocumentRetriever;
+	lt: (value: number) => DocumentRetriever;
+	le: (value: number) => DocumentRetriever;
+	gt: (value: number) => DocumentRetriever;
+	ge: (value: number) => DocumentRetriever;
+	beginsWith: (value: any) => DocumentRetriever;
+	contains: (value: any) => DocumentRetriever;
+	exists: (value: any) => DocumentRetriever;
+	in: (value: any) => DocumentRetriever;
+	between: (...values: any[]) => DocumentRetriever;
 	// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 
